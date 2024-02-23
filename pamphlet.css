@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Serif', serif;
+    background: white;
+    color: black;
+}
+
+.page {
+    page-break-after: always;
+    padding: 1in;
+    width: 8.5in;
+    min-height: 11in;
+    box-sizing: border-box;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    max-width: 100px; /* Adjust based on actual logo size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+main {
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+p, li {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+footer p {
+    font-size: 12px;
+}
