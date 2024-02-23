@@ -3,26 +3,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: url('path-to-your-logo.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-#church-logo {
-    width: 150px;
-    height: auto;
+.content {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
+    padding: 20px;
 }
 
 section {
+    margin: 20px;
     padding: 20px;
-    margin: 0 20px;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
+    background: #fff; /* Solid white background for sections */
 }
 
 footer {
@@ -30,13 +23,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-address {
-    line-height: 1.8;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
+/* Additional styling for better readability over a light background */
+h2, h3, p, li {
+    color: #333; /* Dark grey text for better contrast */
 }
