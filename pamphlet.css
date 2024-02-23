@@ -1,48 +1,55 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: 'Serif', serif;
+    font-family: 'Times New Roman', serif;
     background: white;
-    color: black;
+    color: #333;
+}
+
+.sheet {
+    width: 11in;
+    height: 8.5in;
+    page-break-after: always;
 }
 
 .page {
-    page-break-after: always;
-    padding: 1in;
-    width: 8.5in;
-    min-height: 11in;
+    float: left;
+    width: 5.5in;
+    height: 8.5in;
+    padding: 0.5in;
     box-sizing: border-box;
+}
+
+.front, .back {
+    /* Front and back page specific styles if needed */
+}
+
+.inside-left, .inside-right {
+    /* Inside page specific styles if needed */
 }
 
 header, footer {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 header .logo {
-    max-width: 100px; /* Adjust based on actual logo size */
+    max-width: 300px; /* Larger logo for front page prominence */
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
-main {
-    font-size: 14px;
-}
-
-h1, h2, h3 {
-    margin: 0.5em 0;
+h1, h2 {
+    font-size: 24px;
+    margin: 20px 0;
 }
 
 p, li {
+    font-size: 16px;
+    line-height: 1.5;
     text-align: justify;
-    margin: 10px 0;
-}
-
-ul {
-    list-style-position: inside;
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 14px;
+    margin: 10px 0;
 }
